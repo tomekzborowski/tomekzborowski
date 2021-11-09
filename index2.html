@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <p>Podaj liczbę</p>
+
+        <form>
+            <input type="text" name="pole">
+        
+            <button type="submit">Potwierdź</button>
+        
+        
+        </form>
+
+        <div class="wynik"></div>
+
+        <script>
+
+            const formularz = document.querySelector('form');
+
+            const div = document.querySelector('form');
+
+            formularz.addEventListener('submit',(e) => 
+            {
+                e.preventDefault();
+
+                const liczba = document.querySelector('input[name="pole"]').value;
+
+                if(liczba == 1)
+                {
+                    div.textContent = 'Poniedzialek';
+                }
+                else if (liczba == 2)
+                {
+                    div.textContent = 'Wtorek';
+                }
+                else if (liczba==3)
+                {
+                    div.textContent = 'Środa';
+                }
+                else if(liczba==4){
+                    div.textContent = 'Czwartek';
+                }
+                else if(liczba==5){
+                    div.textContent = 'Piątek';
+                }
+                else if(liczba==6){
+                    div.textContent = 'Sobota';
+                }
+                else if(liczba==7){
+                    div.textContent = 'Niedziela';
+                }
+                else{
+                    div.textContent = 'Podałeś złą liczbę';
+                }
+            })
+
+
+        </script>
+
+
+
+
+
+    </body>
+
+
+</html>
