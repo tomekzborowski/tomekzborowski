@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <form action="" method="POST">
+            <input type="number" name="a"> 
+            <input type="number" name="h">
+            <input type="submit" value="rysuj">
+        </form>
+
+        
+
+        <script>
+            const formularz = document.querySelector('form');
+            const div = document.querySelector('form');
+
+            formularz.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const a = document.querySelector('input[name="a"]').value*1;
+                const h = document.querySelector('input[name="h"]').value*1;
+
+                
+                for(let i=0;i<a;i++){
+                    document.write("*");
+                }
+                document.write("<br />");
+                for(let i=0;i<(h-2);i++){
+                    document.write("*");
+                    for(let j=0; j<(2*(a-2));j++){
+                        document.write("&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br />");
+                }
+                for(let i=0;i<a;i++){
+                    document.write("*");
+                }
+
+                
+
+            });
+        </script>
+
+    </body>
+</html>
