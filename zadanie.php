@@ -9,17 +9,26 @@
 <body>
    //grupa B<br>
     
-    <?php
-   $tab = array();
-   for($i=1;$i<=49;$i++)
-   {
-     $tab[] = $i;
-   }
-    
-    preg_match_all("/1/", serialize($tab), $wynik);
-    $licznik = count($wynik[0]);
-    echo $licznik;
-
+   <?php
+        function obliczanie($tab,$x)
+        {
+            for($i = 0; $i <=20; $i++)
+            {
+                $tab[$i] = rand(1,10);
+            }
+            for($i = 0; $i <=20; $i++)
+            {
+                echo $tab[$i] . ' ';
+                if($tab[$i] == 1)
+                {
+                    $x++;
+                }
+            }
+            echo '<div> 1 było ' . $x . ' razy</div>';
+        }
+        $x = 0;
+        $tab = [];
+        obliczanie($tab,$x);
     ?>
 </body>
 </html>
