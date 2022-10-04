@@ -10,7 +10,7 @@
    //grupa B<br>
     
    <?php
-        function obliczanie($tab,$x)
+        function liczenie($tab,$x)
         {
             for($i = 0; $i <=20; $i++)
             {
@@ -28,7 +28,7 @@
         }
         $x = 0;
         $tab = [];
-        obliczanie($tab,$x);
+        liczenie($tab,$x);
     ?>
 </body>
 </html>
