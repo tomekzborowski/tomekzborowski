@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Wszystkie Smaki</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header class="baner">
+        <h1>Witamy w restauracji "Wszystkie smaki"</h1>
+    </header>
+    <main class="main">
+        <section class="panel-lewy">
+            <img src="https://cdn.galleries.smcloud.net/t/galleries/gf-fvLL-2T8s-A74t_piers-kurczaka-z-ryzem-po-meksykansku-przepis-na-danie-jednogarnkowe-664x442-nocrop.jpg" alt="Nasze danie">
+        </section>
+        <section class="panel-prawy">
+            <h4>U nas dobrze zjesz!</h4>
+            <ol>
+                <li>Obiady od 40zl</li>
+                <li>Przekąski od 10zl</li>
+                <li>Kolacje od 20zl</li>
+            </ol>
+        </section>
+        <section class="panel-dolny">
+            <h2>Zarezerwuj stolik on-line</h2>
+            <form action="rezerwacja.php" method="POST">
+            <label>
+                Data (format rrr-mm-dd)
+                <input type="text" name="data">
+            </label>
+            <label>
+                Ile osób?
+                <input type="number" name="ileOsob">
+            </label>
+            <label>
+                Numer telefonu
+                <input type="text" name="telefon">
+            </label>
+            <input type="checkbox" name="daneOsobowe" value="zgoda">Zgadzam sie na przetwarzanie moich danych osobowych
+            <div class="btny">
+            <input class="form-btn" type="reset" value="WYCZYŚĆ" name="reset">
+            <input class="form-btn" type="submit" value="REZERWUJ"name="submit">
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer class="stopka">
+        <p>Stronę internetową wykonał: 00000000000</p>
+    </footer>
+</body>
+</html>
